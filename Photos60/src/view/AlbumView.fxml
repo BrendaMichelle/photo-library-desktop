@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane style="-fx-background-color: #558749;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlbumController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="229.0" prefHeight="252.0" prefWidth="451.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="249.0" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <TilePane fx:id="albumTile" prefHeight="260.0" prefWidth="433.0" style="-fx-background-color: #b8d0b1;" />
+         </content>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ScrollPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="229.0" layoutY="251.0" prefHeight="250.0" prefWidth="451.0" style="-fx-background-color: black;">
+         <content>
+            <TilePane fx:id="photoTile" prefHeight="257.0" prefWidth="433.0" style="-fx-background-color: #b8d0b1 #b8d0b1;" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="logoutButton" layoutX="73.0" layoutY="459.0" mnemonicParsing="false" onAction="#buttonPressed" onMouseClicked="#logoutFromAlbum" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: azure;" text="Log Out" />
+      <Button fx:id="createAlbumButton" layoutX="74.0" layoutY="26.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: gray;" text="Create Album" />
+      <Button fx:id="deleteAlbumButton" layoutX="74.0" layoutY="71.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: gray;" text="Delete Album" />
+      <Button fx:id="renameAlbumButton" layoutX="72.0" layoutY="112.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: gray;" text="Rename Album" />
+      <Button fx:id="openAlbumButton" layoutX="74.0" layoutY="155.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: gray;" text="Open Album" />
+      <Button fx:id="searchPhotosButton" layoutX="71.0" layoutY="253.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="27.0" prefWidth="114.0" style="-fx-background-color: gray;" text="Search Photos" />
+      <Button fx:id="addPhotoButton" layoutX="71.0" layoutY="298.0" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: gray;" text="Add New Photo" />
+      <Button fx:id="deletePhotoButton" layoutX="71.0" layoutY="341.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="27.0" prefWidth="115.0" style="-fx-background-color: gray;" text="Delete Photo" />
+      <Button fx:id="viewPhotoButton" layoutX="71.0" layoutY="383.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: gray;" text="View Photo" />
+   </children>
+</AnchorPane>
